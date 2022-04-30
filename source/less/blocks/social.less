@@ -1,4 +1,16 @@
 .social__list {
   list-style-type: none;
   .clear;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 130px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social {
+  @media (max-width: @mobile-width-only) {
+    height: 80px;
+  }
 }
