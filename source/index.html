@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин "Мишка"</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -52,6 +53,19 @@
           </li>
         </ul>
       </div>
+      <ul class="main-nav__list sale-list">
+        <li class="sale-list__item">
+          <a href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="sale-list__item">
+          <a href="#">
+            Распродажа
+          </a>
+        </li>
+      </ul>
+      <p class="main-nav__text">Бесплатная доставка по России</p>
     </nav>
   </header>
   <main class="main-container">
@@ -160,7 +174,7 @@
           <p class="contacts__email"><span>e-mail:</span>
             <a class="contacts__email-link" href="#">info@mimimishkashop.ru</a>
           </p>
-          <p class="contacts__text"><span>адрес: </span>
+          <p class="contacts__text"><span>адрес:</span>
             г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
         </div>
         <div class="contacts__map">
@@ -173,11 +187,17 @@
               src="https://yandex.ru/map-widget/v1/-/CCUQaLTTHA" width="320" height="454" frameborder="1"
               allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="contacts__write">
+          <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
+    <a class="main-footer__logo">
+      <img class="main-footer__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+        alt="Логотип интернет-магазина Мишка">
+    </a>
     <div class="main-footer__social social">
       <h3 class="visually-hidden">Наши социальные сети:</h3>
       <ul class="social__list">

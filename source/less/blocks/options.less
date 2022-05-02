@@ -1,15 +1,48 @@
 .options {
-  background-color: @body-color;
+  background-color: @section-color;
   background-image: url("../img/hero-mobile1.jpg");
   background-repeat: no-repeat;
+  min-height: 506px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/hero-desktop-2.jpg");
+    min-height: 700px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/hero-desktop-1.jpg");
+  }
 }
 
 .options__item-toys {
   background-color: @options-dark-color;
+  min-width: 320px;
+  min-height: 103px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 525px;
+  }
 }
 
 .options__item-interior {
   background-color: @options-light-color;
+  min-width: 320px;
+  min-height: 103px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 525px;
+  }
 }
 
 .options__list {
@@ -19,8 +52,17 @@
   line-height: 30px;
   list-style-type: none;
   .clear;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .options__icon-interior {
   color: @body-color;
+}
+
+.options__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 50px;
+  }
 }
