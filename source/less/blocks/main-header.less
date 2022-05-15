@@ -1,8 +1,11 @@
 .main-header {
   background-color: @body-color;
   color: @text-color;
-  display: flex;
-  flex-direction: row;
+  min-height: 79px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 150px;
+  }
 }
 
 .main-header__logo {
@@ -14,5 +17,19 @@
 
   @media (min-width: @desktop-width) {
     height: 85px;
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    order: 0;
+    padding-left: 50px;
+    padding-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 295px;
+    order: 1;
   }
 }

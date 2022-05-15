@@ -6,4 +6,42 @@
   list-style-type: none;
   color: @text-color;
   .clear;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 1;
+    width: 399px;
+    min-height: 88px;
+    padding-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.user-list__search-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__item {
+  @media (min-width: @tablet-width) {
+    min-width: 82px;
+  }
+}
+
+.user-list__search-icon {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+    margin-left: 33px;
+    margin-right: 31px;
+  }
+}
+
+.user-list__cart {
+  @media (min-width: @tablet-width) {
+    margin: 32px 0 32px 31px;
+  }
 }
