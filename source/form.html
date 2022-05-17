@@ -81,7 +81,9 @@
         чтобы уточнить детали.</p>
       <div class="form-order__wrapper">
         <fieldset class="form-order__fieldset form-order__fieldset--type">
-          <legend class="form-order__legend">ТИП</legend>
+          <div class="form-order__type">
+            <legend class="form-order__legend">ТИП</legend>
+          </div>
           <ul class="form-order__list">
             <li class="form-order__item form-order__item--interior">
               <label class="form-order__label form-order__label--type">
@@ -98,8 +100,10 @@
       </div>
       <div class="form-order__wrapper form-order__wrapper--grey">
         <fieldset class="form-order__fieldset form-order__fieldset--color">
-          <legend class="form-order__legend">ЦВЕТ</legend>
-          <ul class="form-order__list">
+          <div class="form-order__color">
+            <legend class="form-order__legend">ЦВЕТ</legend>
+          </div>
+          <ul class="form-order__list form-color">
             <li class="form-order__item form-order__item--color">
               <label class="form-order__label form-order__label--color">
                 <input class="form-order__input visually-hidden" type="checkbox" name="white" checked>Белый
@@ -135,29 +139,33 @@
       </div>
       <div class="form-order__wrapper">
         <fieldset class="form-order__fieldset form-order__fieldset--name">
-          <legend class="form-order__legend">ФИО</legend>
-          <p class="form-order__name">
-            <label class="form-order__label" for="name">Имя:</label>
-            <input class="form-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*"
-              required>
-          </p>
-          <p class="form-order__name">
-            <label class="form-order__label" for="surname">Фамилия:</label>
-            <input class="form-order__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*"
-              required>
-          </p>
-          <p class="form-order__name">
-            <label class="form-order__label" for="patronymic">Отчество:</label>
-            <input class="form-order__input-text" type="text" id="patronymic" name="patronymic"
-              placeholder="Отчество, если желаете">
-          </p>
+          <div class="form-order__legend-name">
+            <legend class="form-order__legend">ФИО</legend>
+          </div>
+          <div class="form-order__form">
+            <p class="form-order__name">
+              <label class="form-order__label" for="name">Имя:</label>
+              <input class="form-order__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя*"
+                required>
+            </p>
+            <p class="form-order__name">
+              <label class="form-order__label" for="surname">Фамилия:</label>
+              <input class="form-order__input-text" type="text" id="surname" name="surname"
+                placeholder="Укажите фамилию*" required>
+            </p>
+            <p class="form-order__name">
+              <label class="form-order__label" for="patronymic">Отчество:</label>
+              <input class="form-order__input-text" type="text" id="patronymic" name="patronymic"
+                placeholder="Отчество, если желаете">
+            </p>
+          </div>
         </fieldset>
       </div>
       <div class="form-order__wrapper form-order__wrapper--grey">
         <p class="form-order__contact">
           <label class="form-order__label-phone" for="phone">ТЕЛ</label>
-          <input class="form-order__input-text" type="text" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-            required>
+          <input class="form-order__input-text form-order__input-text--grey" type="text" id="phone" name="phone"
+            placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <svg class="form-order__phone-svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity=".2" fill="#000">
@@ -170,7 +178,8 @@
         </p>
         <p class="form-order__contact">
           <label class="form-order__label-email" for="email">E-MAIL</label>
-          <input class="form-order__input-text" placeholder="Ваш Email*" type="email" name="email" id="email" required>
+          <input class="form-order__input-text form-order__input-text--grey " placeholder="Ваш Email*" type="email"
+            name="email" id="email" required>
           <svg class="form-order__email-svg" width="32" height="21" viewBox="0 0 32 21" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path opacity=".2"
