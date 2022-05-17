@@ -5,4 +5,17 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 3;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    min-width: 344px;
+    height: 24px;
+  }
 }
